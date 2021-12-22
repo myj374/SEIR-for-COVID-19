@@ -1,0 +1,333 @@
+<Document>
+<Version> 22 </Version>
+<JMadonnaVersion> 10.2.8 </JMadonnaVersion>
+<Bounds> 0 0 1621 707 </Bounds>
+<dataset>
+<name> #chinaSS </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 22.0 41.0
+ 23.0 41.0
+ 24.0 41.0
+ 25.0 45.0
+ 26.0 62.0
+ 27.0 198.0
+ 28.0 275.0
+ 29.0 291.0
+ 30.0 440.0
+</matrix>
+</dataset>
+<dataset>
+<name> #chinaD </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 22.0 1.0
+ 23.0 1.0
+ 24.0 2.0
+ 25.0 2.0
+ 26.0 2.0
+ 27.0 3.0
+ 28.0 4.0
+ 29.0 6.0
+ 30.0 9.0
+</matrix>
+</dataset>
+<dataset>
+<name> #chinaR </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 22.0 0.0
+ 23.0 0.0
+ 24.0 5.0
+ 25.0 8.0
+ 26.0 12.0
+ 27.0 17.0
+ 28.0 18.0
+ 29.0 25.0
+ 30.0 25.0
+</matrix>
+</dataset>
+<dataset>
+<name> #chinaI </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 22.0 40.0
+ 23.0 40.0
+ 24.0 34.0
+ 25.0 35.0
+ 26.0 48.0
+ 27.0 178.0
+ 28.0 253.0
+ 29.0 260.0
+ 30.0 406.0
+</matrix>
+</dataset>
+<dataset>
+<name> #SS </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 1.0 41.0
+ 2.0 41.0
+ 3.0 41.0
+ 4.0 45.0
+ 5.0 62.0
+ 6.0 198.0
+ 7.0 275.0
+ 8.0 291.0
+ 9.0 440.0
+</matrix>
+</dataset>
+<dataset>
+<name> #D </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 1.0 1.0
+ 2.0 1.0
+ 3.0 2.0
+ 4.0 2.0
+ 5.0 2.0
+ 6.0 3.0
+ 7.0 4.0
+ 8.0 6.0
+ 9.0 9.0
+</matrix>
+</dataset>
+<dataset>
+<name> #R </name>
+<points> true </points>
+<is2D> 0 </is2D>
+<matrix> 9 2
+ 1.0 0.0
+ 2.0 0.0
+ 3.0 5.0
+ 4.0 8.0
+ 5.0 12.0
+ 6.0 17.0
+ 7.0 18.0
+ 8.0 25.0
+ 9.0 25.0
+</matrix>
+</dataset>
+<NotesEditor>
+<jeditorpane>
+<size>12</size><family>ËÎÌו</family>
+
+
+
+
+
+
+
+</jeditorpane>
+</NotesEditor>
+<jmadonna.EquationPanel>
+<DocPanel>
+</DocPanel>
+<jeditorpane>
+<size>12</size><family>Serif</family>METHOD RK4
+
+STARTTIME = 0
+STOPTIME = 200
+DT = 1
+
+d/dt(S)=-lambda*I*S/N-lambda1*E*S/N+mu1*E;
+d/dt(E)=lambda*S*I/N+lambda1*E*S/N-(delta+mu1)*E;
+d/dt(I)=delta*E-(mu+alpha)*I;
+d/dt(R)=mu*I;
+d/dt(D)=alpha*I;
+d/dt(SS)=delta*E;
+
+
+init S=N-42;
+init E=0;
+init I=41;
+init R=0;
+init D=1;
+init SS=42;
+
+N=1400000000;
+lambda=0.6;
+lambda1=0.6;
+delta=0.125;
+mu=0.1
+mu1=0.05;
+mu2=0.12;
+alpha=0.05;
+alpha1=0.0025;
+sita=0.9;
+phi=0.7;
+
+
+
+
+
+
+
+
+
+</jeditorpane>
+</jmadonna.EquationPanel>
+
+<imethod> auto </imethod>
+<Param> lambda 0.6294982803134425 </Param>
+<Param> lambda1 0.4306037927864054 </Param>
+<jmadonna.ParameterPanel>
+<DocPanel>
+</DocPanel>
+<ParamSets>
+</ParamSets>
+</jmadonna.ParameterPanel>
+<jmadonna.MultiPanel>
+<DocPanel>
+</DocPanel>
+<DividerPercent> 1.0 </DividerPercent>
+<Orientation> -1 </Orientation>
+<idx> 0 </idx>
+<TabSplitter>
+<SelectedIndex> 1 </SelectedIndex>
+<graph.COutputFrame>
+<DocPanel>
+<Name>
+Graph 1
+</Name>
+</DocPanel>
+
+<SingleView>
+<graph.COutputView>
+<Name> Graph </Name>
+<GraphToolBar>
+<Legend> 1 </Legend>
+<Grid> 1 </Grid>
+</GraphToolBar>
+<Plot>
+<LineWidth> 1 </LineWidth>
+<MovableLegend>
+<Bounds> 1063 130 56 152 </Bounds>
+<opaque> true </opaque>
+<Color> 255 255 255 </Color>
+<border> true </border>
+</MovableLegend>
+</Plot>
+<OV_XVAR>
+<VI_SYMBOL> TIME </VI_SYMBOL>
+</OV_XVAR>
+<OV_YVARS>
+<OV_YVAR_I>
+<VI_SYMBOL> #SS </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> #R </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> SS </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> R </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> I </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> D </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> E </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+<OV_YVAR_I>
+<VI_SYMBOL> S </VI_SYMBOL>
+<VI_SHOW> true </VI_SHOW>
+<VI_Y2AXIS> false </VI_Y2AXIS>
+</OV_YVAR_I>
+</OV_YVARS>
+<OV_TABLE> false </OV_TABLE>
+<OV_FFT> false </OV_FFT>
+<OV_COLORS> true </OV_COLORS>
+<OV_STYLES> false </OV_STYLES>
+<OV_OSCMODE> false </OV_OSCMODE>
+<OV_LINES> true </OV_LINES>
+<OV_POINTS> false </OV_POINTS>
+<OV_GRID> true </OV_GRID>
+<OV_DBTN> true </OV_DBTN>
+<OV_LEGEND> true </OV_LEGEND>
+<OV_PARAMS> false </OV_PARAMS>
+<OV_READOUT> false </OV_READOUT>
+<OV_INITCOND> false </OV_INITCOND>
+<OV_RDOUTFXFY> 0.0 0.0 </OV_RDOUTFXFY>
+<OV_ZSNORMAL>
+</OV_ZSNORMAL>
+<OV_ZSFFT>
+<ZS_SIZE> 1 </ZS_SIZE>
+<ZS_I>
+<ZS_XLOG> true </ZS_XLOG>
+<ZS_Y1LOG> false </ZS_Y1LOG>
+<ZS_Y2LOG> false </ZS_Y2LOG>
+</ZS_I>
+</OV_ZSFFT>
+<OV_ZSOSCMODE>
+</OV_ZSOSCMODE>
+<OV_AUTOLABEL> 0 1 </OV_AUTOLABEL>
+<OV_AUTOLABEL> 1 1 </OV_AUTOLABEL>
+<OV_AUTOLABEL> 2 1 </OV_AUTOLABEL>
+<OV_X1LABELS>  TIME </OV_X1LABELS>
+<OV_Y1LABELS>  #SS, #R, SS, R, I, D, E, S </OV_Y1LABELS>
+<OV_Y2LABELS>   </OV_Y2LABELS>
+<OV_LEGENDXY> 0.30000001192092896 0.5 </OV_LEGENDXY>
+<OV_PARAMSXY> 0.30000001192092896 0.5 </OV_PARAMSXY>
+<OV_COLORTABLE> 0 <OV_COLORTABLE>
+</graph.COutputView>
+</SingleView>
+</graph.COutputFrame>
+</TabSplitter>
+<idx> 1 </idx>
+<TabSplitter>
+<SelectedIndex> -1 </SelectedIndex>
+</TabSplitter>
+</jmadonna.MultiPanel>
+
+<CurveFitInfo>
+0.001 1
+<OptParm>
+lambda 0.2 1.0 0.4 0.5
+</OptParm>
+<OptParm>
+lambda1 0.1 1.0 0.3 0.5
+</OptParm>
+<FitSpec>
+#R R 1.0
+</FitSpec>
+<MultiFit>
+<FitSpec>
+#SS SS 1.0
+</FitSpec>
+<FitSpec>
+#R R 1.0
+</FitSpec>
+</MultiFit>
+</CurveFitInfo>
+<ChemicalReactionDialog>
+<ShowRates> true </ShowRates>
+<ShowConsts> true </ShowConsts>
+<ShowInits> true </ShowInits>
+<ShowDiffs> true </ShowDiffs>
+</ChemicalReactionDialog>
+</Document>
