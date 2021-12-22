@@ -4,53 +4,53 @@
 
 #### 1.经典的SEIR模型
 
-<img src="C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112448578.png" alt="image-20211222112448578" style="zoom:67%;" />
+<img src="/pictures/0.jpg" alt="image-20211222112448578" style="zoom:67%;" />
 
 matlab结果
 
-![image-20211222111805137](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222111805137.png)
+![image-20211222111805137](/pictures/00.jpg)
 
 #### 2.考虑潜伏者传染情况
 
-<img src="C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112510066.png" alt="image-20211222112510066" style="zoom:67%;" />
+<img src="/pictures/1.jpg" alt="image-20211222112510066" style="zoom:67%;" />
 
 matlab结果
 
-![image-20211222111920999](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222111920999.png)
+![image-20211222111920999](/pictures/11.jpg)
 
 #### 3.考虑政府采取隔离措施
 
-<img src="C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112527193.png" alt="image-20211222112527193" style="zoom:67%;" />
+<img src="/pictures/2.jpg" alt="image-20211222112527193" style="zoom:67%;" />
 
 matlab结果
 
-![image-20211222112016861](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112016861.png)
+![image-20211222112016861](/pictures/22.jpg)
 
 #### 4.考虑民众居家隔离
 
-<img src="C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112543737.png" alt="image-20211222112543737" style="zoom:67%;" />
+<img src="/pictures/3.jpg" style="zoom:67%;" />
 
 matlab结果
 
-![image-20211222112104647](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112104647.png)
+![image-20211222112104647](/pictures/33.jpg)
 
 #### 5.参数调整（Berkeley Madonna）
 
-![image-20211222112147023](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112147023.png)
+![image-20211222112147023](/pictures/4.jpg)
 
 MATLAB结果图如下
 
-![image-20211222112208120](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112208120.png)
+![image-20211222112208120](/pictures/44.jpg)
 
 ## 模型检验
 
-![img](file:///C:/Users/mm/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png)
+![img](/pictures/5.jpg)
 
-![image-20211222112233619](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112233619.png)
+![image-20211222112233619](/pictures/6.jpg)
 
-![image-20211222112238551](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112238551.png)
+![image-20211222112238551](/pictures/7.jpg)
 
-![image-20211222112245025](C:\Users\mm\AppData\Roaming\Typora\typora-user-images\image-20211222112245025.png)
+![image-20211222112245025](/pictures/8.jpg)
 
 ## 参考
 
